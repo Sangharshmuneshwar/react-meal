@@ -27,7 +27,9 @@ const HomePage = () => {
           meals.map((meal) => (
             <div className="home-meal" key={meal.idMeal}>
               <img src={meal.strMealThumb} alt="#" />
-              <h4>{meal.strMeal}</h4>
+             <div className="meal-info">
+             <h3>{meal.strMeal}</h3>
+             </div>
             </div>
           ))
         ) : (

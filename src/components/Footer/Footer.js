@@ -2,8 +2,8 @@ import React from 'react'
 import './Footer.scss'
 const Footer = () => {
     return (
-        <div className="footer">
-            <p>Meals <span>App</span> 2021 &copy;</p>
+        <div className="foot">
+            <p>Meal <span>Finder</span> 2022 &copy;</p>
         </div>
     )
 }

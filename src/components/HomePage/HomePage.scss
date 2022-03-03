@@ -35,6 +35,10 @@
       margin-left: 10px;
       border-radius: 5px;
       outline: none;
+      cursor: pointer;
+      &:hover{
+        border-bottom: 2px solid wheat;
+      }
     }
   }
 
@@ -47,6 +51,7 @@
       
       .home-meal{
           text-align: center;
+          position: relative;
       }
 
       img{
@@ -60,6 +65,22 @@
               transform:scale(1.1)
           }
       }
-
+     
   }
+}
+.meal-info{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease-in;
+  opacity: 0;
+}
+.home-meal:hover .meal-info{
+  opacity: 1;
 }

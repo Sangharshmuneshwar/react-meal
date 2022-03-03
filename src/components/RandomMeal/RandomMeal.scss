@@ -1,6 +1,6 @@
 .random {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: #000;
   color: #fff;
   display: flex;
@@ -27,6 +27,7 @@
       margin-top: 20px;
       button {
         margin-top: 15px;
+        margin-bottom: 20px;
         padding: 10px;
         border: 1px solid #ccc;
         outline: none;
@@ -35,7 +36,10 @@
         font-size: 18px;
         border-radius: 10px;
         cursor: pointer;
-
+      &:hover{
+        background: orange;
+        transition: 0.3s;
+      }
       }
     }
 
@@ -48,4 +52,39 @@
       }
     }
   }
+  ul{
+    padding-left: 0;
+    list-style-type: none;
+    align-items: center;
+    align-content: center;
+
+    li{
+      border: 1px solid #ededed;     
+      background-color: #fff;
+      border-radius: 5px;
+      display: inline-block;
+      color: #2d2d2d;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 5px;
+      margin: 0 5px 5px 0;
+      align-items: center;
+      align-self: center;
+    }
+  }
+  h2{
+    text-align: center;
+  }
+}
+.area{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: auto;
+  margin-left: 400px;
+  
+  align-items: center;
+  border: 1px white dashed;
+  width: 40%;
+  height: 20%;
 }
